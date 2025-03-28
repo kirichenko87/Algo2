@@ -1,4 +1,6 @@
 def big_digit(arr: list):
+    if not isinstance(arr, list):
+        raise TypeError
     lenght = len(arr)
     digit = 0
     for i in range(0, lenght, 1):
