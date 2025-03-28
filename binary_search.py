@@ -1,4 +1,10 @@
 def binary_search(arr: list, target: int):
+
+    if not isinstance(arr, list):
+        raise TypeError
+    if not isinstance(target, int):
+        raise TypeError
+
     left_limit = 0
     right_limit = len(arr)
     mid = (left_limit + right_limit) // 2
