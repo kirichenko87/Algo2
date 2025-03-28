@@ -8,6 +8,10 @@ def even(num: int):
 
 
 def reverse_even_elements(arr: list):
+
+    if not isinstance(arr, list):
+        raise TypeError
+
     lenght = len(arr)
     iter = lenght - 1
 
