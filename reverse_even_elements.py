@@ -13,7 +13,7 @@ def reverse_even_elements(arr: list):
 
     for i in range(0, lenght, 1):
 
-        if iter == i:
+        if iter <= i:
             continue
 
         if even(arr[i]):
@@ -29,5 +29,5 @@ def reverse_even_elements(arr: list):
     return arr
 
 
-lst = [2,1]
+lst = [1, 2, 3, 4, 5, 6]
 print(reverse_even_elements(lst))
